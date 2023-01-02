@@ -157,6 +157,34 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_holderAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_holderName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_courseName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_expiryDate",
+						"type": "uint256"
+					}
+				],
+				"name": "createCertificate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "tokenId",
 						"type": "uint256"
@@ -168,6 +196,50 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "holderAddress",
+						"type": "address"
+					}
+				],
+				"name": "getCertificateDetails",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "cert_holder_address",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "cert_holder_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cert_course_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cert_issue_date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cert_expiry_date",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -245,19 +317,6 @@
 			{
 				"inputs": [],
 				"name": "renounceOwnership",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					}
-				],
-				"name": "safeMint",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -592,11 +651,11 @@
 			]
 		},
 		"SoulboundCertificate.sol": {
-			"keccak256": "0x8a5f13c449c3cac3fd0f5826cb57d8229d4dae64d81a8c00e97db5e77214b155",
+			"keccak256": "0x94ce0a851738ebef6050dee13ba5908a0e0e7188118a6a53a03ca3ab9fb892da",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b0bb63ead458dc90af310fe68e59eef3ae882fdd976ab2049a1874f55d20e31b",
-				"dweb:/ipfs/QmfBkSPrTUePmjWCCKLvAAGARKiNg4DvvgjhLpZqrxVZKH"
+				"bzz-raw://c68579217f36a4d6015f5277afa11effb2b7b0a3048fd81ac679d83bd8546493",
+				"dweb:/ipfs/QmbsQxQrax9kWRB9PNQqms1ZQLxAHqesYHG4kXVJgkwLiB"
 			]
 		}
 	},
